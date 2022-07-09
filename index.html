@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Book/Library Management System Using JavaScript & FireBase</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Smart Book Management System</h2>
+            <hr>
+            <div class="info">
+                <label for="name">Title Of The book:</label>
+                <input type="text" id="titleBox" placeholder="Enter the title">
+            </div>
+            <div class="info">
+                <label for="author">Author's Name:</label>
+                <input style="margin-left: 19px;" type="text" id="authBox" placeholder="Enter the name of author">
+            </div>
+            <div class="info">
+                <label for="name">Language:</label>
+                <select name="lang" id="langBox" style="margin-left: 74px;">
+                    <option disabled selected>Select your Choice</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+            <div class="info">
+                <label for="name">Subject:</label>
+                <input style="margin-left: 104px;" type="text" id="subBox" placeholder="Enter the Subject">
+            </div>
+            <div class="btns">
+                <button id="btn1">Insert</button>
+                <button id="btn2">Read</button>
+                <button id="btn3">Update</button>
+                <button id="btn4">Delete</button>
+            </div>
+            <div class="books" style="text-align: center;margin-top: 10px;">
+                <a style="color: brown;font-size: larger;font-weight: 700;" href="./booksList.html">Available Books</a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./firebaseConfig.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
